@@ -51,7 +51,7 @@ Configure replica set in mongo shell:
 > rs.initiate(rsconf)
 ```
 
-After few seconds, replica set will election a primary one.
+After few seconds, replica set will elect a primary one.
 
 Then check DB status:
 
@@ -112,7 +112,7 @@ CONTAINER ID        IMAGE                  COMMAND                  CREATED     
 8dec66375f49        mongo:latest           "docker-entrypoint.s…"   3 minutes ago      Up 28 minutes               0.0.0.0:27018->27017/tcp                         mongo2
 ```
 
-Samely, after few seconds. Replica set will election a new primary.
+After few seconds, Replica set will elect a new primary as the previous time.
 
 Check data still exists.
 
