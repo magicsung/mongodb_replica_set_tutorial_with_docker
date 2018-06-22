@@ -1,0 +1,20 @@
+version: '3'
+services:
+  mongo1:
+    container_name: mongo1
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    command: mongod --replSet rs
+  mongo2:
+    container_name: mongo2
+    image: mongo:latest
+    ports:
+      - "27018:27017"
+    command: mongod --replSet rs
+  mongo3:
+    container_name: mongo3
+    image: mongo:latest
+    ports:
+      - "27019:27017"
+    command: mongod --replSet rs
